@@ -4,7 +4,7 @@
 }
 
 a{
-    color: white;
+    color: black;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -21,19 +21,22 @@ a:hover{
 
 nav{
     display: flex;
-    justify-content: space-around ;
+    justify-content: space-around;
     align-items: center;
     font-family: sans-serif;
-    background:linear-gradient(#d08d4e 30%, #af997d );
+    background:white;
     height: 8vh;
 }
 
 main{
-    background: url("https://cdn.pixabay.com/photo/2023/09/05/16/40/sunrise-8235464_1280.jpg") no-repeat center center;
+    background: url("/img/bg1.jpg") no-repeat center center;
     background-size: cover;
     height: 92vh;
 }
-
+nav ul{
+    margin-bottom: 0;
+    padding: 0;
+}
 .nav-list{
     list-style: none;
     display: flex;
@@ -52,7 +55,7 @@ main{
 .mobile-menu div{
     width: 32px;
     height: 2px;
-    background: white;
+    background: black;
     margin: 8px;
     transition: 0.3s;
     
@@ -68,7 +71,7 @@ main{
         right: 0;
         width: 50vw;
         height: 92vh;
-        background:linear-gradient(#af997d 30%, #d08d4e );
+        background:white;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
