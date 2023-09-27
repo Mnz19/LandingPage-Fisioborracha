@@ -2,3 +2,32 @@
 .differential{
     height: 40vh;
 }
+
+main img{
+    height: 92vh;
+    object-fit: cover ;
+}
+
+main h5{
+    font-size: 7vh;
+    width: 100%;
+    display: flex;
+}
+
+.carouselButton{
+
+}
+.carouselButton ion-icon {
+    color: white;
+    font-size: 6vh;
+    animation: pulse 1s ease-in-out infinite both
+}
+
+ @keyframes pulse{
+    0%{transform:scale(1)
+    }50%{
+        transform:scale(1.1)
+    } 100%{
+        transform:scale(1)
+    }
+}
