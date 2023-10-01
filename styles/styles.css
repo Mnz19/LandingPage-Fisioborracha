@@ -1,28 +1,93 @@
 
+
 .differential{
     height: 40vh;
+    background-color: black;
 }
 
 main img{
     height: 92vh;
     object-fit: cover ;
+    filter: brightness(50%)
+
 }
 
-main h5{
+.active h5{
     font-size: 7vh;
     width: 100%;
     display: flex;
+    justify-content: center;
 }
+.active p{
+    font-size: 4vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 
 .carouselButton{
-
+    cursor: pointer;
 }
+
 .carouselButton ion-icon {
     color: white;
     font-size: 6vh;
     animation: pulse 1s ease-in-out infinite both
 }
 
+.about{
+    display: flex;
+    flex-direction: column;
+    height: 63vh;
+    overflow-x: hidden;
+}
+.aboutTitle{
+    padding-top: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4vh;
+    width: auto;
+}
+.aboutContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.aboutContainer img{
+    height: 35vh;
+    object-fit: cover;
+    border-radius: 2.5vh;
+}
+.aboutContainer p{
+    width: auto;
+    height: 30vh;   
+    width: 40vh; 
+}
+
+/* .aboutContainer img, p{
+    margin-left: 5vh;
+    margin-right: 5vh;    
+} */
+
+
+@media (max-width: 999px) {
+    .about{
+        height: auto;
+    }
+    .aboutContainer{
+        flex-direction: column;
+    }
+    .aboutContainer img{
+        margin-bottom: 5vh;
+        height: 28vh;
+    }
+    .aboutTitle h1{
+        font-size: 3.5vh;
+    }
+}
  @keyframes pulse{
     0%{transform:scale(1)
     }50%{
